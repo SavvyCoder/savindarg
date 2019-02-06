@@ -29,7 +29,6 @@ description {
 portfolio {
     display: block;
     text-align: center;
-    margin-top: 5rem;
 }
 
 portfolio h1 {
@@ -137,11 +136,19 @@ li,
     position: relative;
 }
 
-.slime {
+.knight {
     width: 116px;
     height: 116px;
     background: url('knight_attack.png') left center;
     animation: slime 1s steps(6) infinite;
+}
+
+.slime {
+    width: 117px;
+    height: 77px;
+    background: url('slime.png') left center;
+    animation: slime 1s steps(6) infinite;
+    margin: auto;
 }
 
 #overflow-container {
