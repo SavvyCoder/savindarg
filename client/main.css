@@ -423,12 +423,18 @@ technologies {
     .tech_list {
         font-size: 1.25rem;
     }
+    #message {
+        margin-top: 1rem;
+    }
 }
 
 @media (max-width: 380px) {
     /*.next {*/
     /*    right: 3rem;*/
     /*}*/
+    #message {
+        margin-top: 1rem;
+    }
 }
 
 @media (max-width: 365px) {
