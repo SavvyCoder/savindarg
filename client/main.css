@@ -1,0 +1,385 @@
+container {
+    display: grid;
+    padding: 0;
+    margin: 0;
+    grid-template-rows: 700px 250px 1000px 400px 300px;
+    overflow: hidden;
+}
+
+banner {
+    /* background-color: #413659;  */
+    display: flex;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+description {
+    display: flex;
+    padding: 0;
+    margin-top: 1rem;
+    justify-content: center;
+    color: black;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+portfolio {
+    display: block;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+portfolio h1 {
+    font-size: 3rem;
+}
+
+banner h1 {
+    font-size: 3rem;
+}
+
+banner h2 {
+    font-size: 2rem;
+    color: orange;
+}
+
+contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+/* banner-slideshow {
+    height: 700px;
+    width: 5080px;
+    padding: 0;
+    margin: 0;  
+} */
+
+@font-face {
+    font-family: 'Munro';
+    src: url('munro.ttf');
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+.text {
+    font-family: 'Munro', 'Georgia', serif;
+}
+
+#profile_pic {
+    position: absolute;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    /* align-self: center; */
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 100%;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* .images {
+    background: url(slideshow.jpg) repeat-x;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    height: 700px;
+    width: 300%;
+    animation: slide 60s linear infinite;} */
+
+#name_title {
+    flex: 0 1 auto;
+    position: relative;
+    text-align: center;
+}
+
+#headshot {
+    width: 250px;
+    height: 250px;
+}
+
+#sliding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.slime {
+    width: 116px;
+    height: 116px;
+    background: url('knight_attack.png') left center;
+    animation: slime 1s steps(6) infinite;
+}
+
+#overflow-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+technologies {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#frontend {
+    flex: 0 1 auto;
+
+}
+
+.tech_list {
+    font-size: 2rem;
+    list-style-type: none;
+}
+
+.h2_font {
+    font-size: 2rem;
+}
+
+#backend {
+    flex: 0 1 auto;
+}
+
+/* #description {
+    text-al
+  } */
+
+/* @keyframes slide {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -200%;
+    }
+} */
+
+@keyframes slime {
+    100% {
+        background-position: -699px;
+    }
+}
+
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1200px;
+    max-height: 720px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    margin-right: 120px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+
+.text {
+    color: orange;
+    font-size: 1.5rem;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/10 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.sliding-background {
+    background: url(slideshow.jpg) repeat-x;
+    height: 700px;
+    width: 5079px;
+    animation: slide 60s linear infinite;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.sliding_footer {
+    background: url(footerBackground.png) repeat-x;
+    height: 300px;
+    width: 5079px;
+    animation: slide 60s linear infinite;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#footer {
+    display: grid;
+    height: 300px;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-1693px, 0, 0);
+    }
+}
+
+
+@media(max-width: 1000px) {
+    portfolio {
+        margin-top: 8rem;
+    }
+}
+
+@media(max-width: 800px) {
+    portfolio {
+        margin-top: 15rem;
+    }
+}
+
+@media(max-width: 650px) {
+    portfolio {
+        margin-top: 20rem;
+    }
+}
+
+@media(max-width: 500px) {
+    portfolio {
+        margin-top: 30rem;
+    }
+}

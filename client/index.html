@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Savinda Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <container id="container">
+        <banner>
+            <div id="sliding">
+                <!-- <div class="images">
+                </div> -->
+                <div class="sliding-background"></div>
+                <div id="profile">
+                    <div id="headshot">
+                        <img id="profile_pic" src="//www.gravatar.com/avatar/1a9c0badcc9e1f2c756bd8c5e6aa9d89?s=200&amp;r=pg&amp;d=mm" alt="">
+                    </div>
+                    <div id="name_title">
+                        <h1>Savinda Gunawardena</h1>
+                        <h2>Full-Stack Developer</h2>
+                    </div>
+                </div>
+            </div>
+        </banner>
+        <description>
+            <div class="slime"></div>
+            <h2 id="description">I'm a highly motivated engineer seeking to leverage my passion for technology to make the world a better place</h2>
+        </description>
+        <portfolio>
+            <h1>Portfolio</h1>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 10</div>
+                    <img src="dissuade\DissuadeHompage.png" style="width:100%">
+                    <div class="text">Dissuade Homepage</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 10</div>
+                    <img src="dissuade\dissuadeDashboard.png" style="width:100%; margin-bottom: 1rem;">
+                    <div class="text" style="">Dissuade Dashboard</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 10</div>
+                    <img src="dissuade\dissuadeProfiles.png" style="width:100%">
+                    <div class="text">Dissuade Profiles</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 10</div>
+                    <img src="dissuade\dissuadeCommentFeed.png" style="width:100%">
+                    <div class="text">Dissuade Posts</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 10</div>
+                    <img src="yelpcamp\YelpCampHomePage.png" style="width:100%">
+                    <div class="text">YelpCamp Landing</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 10</div>
+                    <img src="yelpcamp\YelpCampCampgrounds.png" style="width:100%">
+                    <div class="text">YelpCamp Campgrounds</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">7 / 10</div>
+                    <img src="yelpcamp\YelpCampCampground.png" style="width:100%">
+                    <div class="text">YelpCamp Campground</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">8 / 10</div>
+                    <img src="candy\museumCandyLanding.png" style="width:100%">
+                    <div class="text">Museum of Candy</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">9 / 10</div>
+                    <img src="candy\museumCandyScrolled.png" style="width:100%">
+                    <div class="text">Museum of Candy</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">10 / 10</div>
+                    <img src="knight\pocket-knight.png" style="width:100%; margin-bottom: 1rem;">
+                    <div class="text">Pocket Knight</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+                <span class="dot" onclick="currentSlide(9)"></span>
+                <span class="dot" onclick="currentSlide(10)"></span>
+            </div>
+        </portfolio>
+        <technologies>
+            <div id="frontend">
+                <h2 class="h2_font">Front-End technologies</h2>
+                <ul class="tech_list">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>ES6</li>
+                    <li>React/Redux</li>
+                    <li>Vue.js</li>
+                    <li>Webpack</li>
+                </ul>
+            </div>
+            <div id="backend">
+                <h2 class="h2_font">Back-End technologies</h2>
+                <ul class="tech_list">
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>MongoDB</li>
+                    <li>PostgresSQL</li>
+                    <li>MySQL</li>
+                </ul>
+            </div>
+        </technologies>
+        <contact>
+            <div class="sliding_footer"></div>
+            <div id="footer">
+                <div style="height: 20%">
+                    <h1>Shoot me a message!</h1>
+                </div>
+                <form action="/contact" id="contact-form" method="post" role="form" onsubmit="Success()" style="height: 80%">
+                    <div style="height: 20%">
+                        <label for="name"></label>
+                        <input id="name" name="name" type="text" placeholder="Your name" required="required">
+                        <label for="email"></label>
+                        <input id="email" name="email" type="text" placeholder="Your email" required="required">
+                    </div>
+                    <div style="height: 40%">
+                        <label for="message"></label>
+                        <textarea id="message" name="message" placeholder="Enter your message here" rows="3" required="required"></textarea>
+                    </div>
+                    <div style="height: 20%; padding-top: 1rem;">
+                        <button id="submit" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </contact>
+    </container>
+</body>
+
+</html>
