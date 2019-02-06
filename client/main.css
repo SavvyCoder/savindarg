@@ -2,7 +2,8 @@ container {
     display: grid;
     padding: 0;
     margin: 0;
-    grid-template-rows: 700px 250px 1000px 400px 300px;
+    /*grid-template-rows: 700px 250px 1000px 400px 300px;*/
+    grid-template-rows: auto;
     overflow: hidden;
 }
 
@@ -151,7 +152,6 @@ li,
 technologies {
     display: flex;
     justify-content: space-around;
-
 }
 
 #frontend {
@@ -166,6 +166,7 @@ technologies {
 
 .h2_font {
     font-size: 2rem;
+    text-align: center;
 }
 
 #backend {
@@ -360,26 +361,78 @@ technologies {
 }
 
 
-@media(max-width: 1000px) {
-    portfolio {
-        margin-top: 8rem;
+/*@media(max-width: 1000px) {*/
+
+/*    portfolio {*/
+
+/*        margin-top: 8rem;*/
+
+/*    }*/
+
+/*}*/
+
+/*@media(max-width: 800px) {*/
+
+/*    portfolio {*/
+
+/*margin-top: 15rem;*/
+
+/*        height: 400px;*/
+
+/*    }*/
+
+/*}*/
+
+/*@media(max-width: 650px) {*/
+
+/*    portfolio {*/
+
+/*margin-top: 20rem;*/
+
+/*        height: 300px;*/
+
+/*    }*/
+
+/*}*/
+
+/*@media(max-width: 500px) {*/
+
+/*    portfolio {*/
+
+/*margin-top: 30rem;*/
+
+/*        height: 250px;*/
+
+/*    }*/
+
+/*}*/
+
+@media (max-width: 420px) {
+    .tech_list {
+        font-size: 1.5rem;
     }
 }
 
-@media(max-width: 800px) {
-    portfolio {
-        margin-top: 15rem;
+@media (max-width: 400px) {
+    /*.next {*/
+    /*    right: 1.5rem;*/
+    /*}*/
+    .h2_font {
+        font-size: 1.5rem;
+    }
+    .tech_list {
+        font-size: 1.25rem;
     }
 }
 
-@media(max-width: 650px) {
-    portfolio {
-        margin-top: 20rem;
-    }
+@media (max-width: 380px) {
+    /*.next {*/
+    /*    right: 3rem;*/
+    /*}*/
 }
 
-@media(max-width: 500px) {
-    portfolio {
-        margin-top: 30rem;
+@media (max-width: 365px) {
+    #message {
+        margin-top: 1rem;
     }
 }
