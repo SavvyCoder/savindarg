@@ -64,8 +64,8 @@ contact {
 } */
 
 @font-face {
-    font-family: 'Munro';
-    src: url('munro.ttf');
+    font-family: 'Staatliches', cursive;
+    font-family: 'Raleway', sans-serif;
 }
 
 h1,
@@ -75,7 +75,7 @@ p,
 ul,
 li,
 .text {
-    font-family: 'Munro', 'Georgia', serif;
+    font-family: 'Staatliches', cursive;
 }
 
 #profile_pic {
@@ -324,10 +324,11 @@ technologies {
 }
 
 .sliding-background {
-    background: url(slideshow.jpg) repeat-x;
+    background: url(banners1974.png) repeat-x;
     height: 700px;
-    width: 5079px;
-    animation: slide 60s linear infinite;
+    /*width: 5079px;*/
+    width: 5922px;
+    animation: slidebanner 60s linear infinite;
     position: absolute;
     overflow: hidden;
     top: 0;
@@ -339,7 +340,7 @@ technologies {
     background: url(footerBackground.png) repeat-x;
     height: 300px;
     width: 5079px;
-    animation: slide 60s linear infinite;
+    animation: slidebanner 60s linear infinite;
     position: absolute;
     overflow: hidden;
     top: 0;
@@ -367,21 +368,33 @@ technologies {
     }
 }
 
+@keyframes slidebanner {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-1974px, 0, 0);
+    }
+}
+
 
 .hvr-grow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
 }
-.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 /*@media(max-width: 1000px) {*/
